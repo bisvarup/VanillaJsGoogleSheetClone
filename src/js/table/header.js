@@ -1,12 +1,19 @@
+const theads = require("../lib/helers").config;
+
 (function() {
-  const theads = require("../lib/helers").config;
+  renderTable();
+})();
+
+function renderTable() {
   document.getElementById("thead").innerHTML = generateTable(theads);
 
   function generateTable(theads) {
-    let theadStr = "";
+    let theadStr = `<th class="">1</th>`;
     theads.forEach(element => {
-      theadStr += `<th class="px-0">${element}</th>`;
+      theadStr += `<th class="">${element}</th>`;
     });
     return theadStr;
   }
-})();
+}
+
+export { generateTable };

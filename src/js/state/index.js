@@ -1,8 +1,31 @@
-module.exports = {
-  state: {
-    page: 1
-  },
-  updatePage: pageNo => {
-    state.page = pageNo;
+const lib = require("../lib/helers");
+const maxPaginationSize = require("../../../constants/config")
+  .maxPaginationSize;
+
+state = {
+  pagination: {
+    page: 1,
+    start: 1,
+    total: lib.totalPages(),
+    maxSize: 5
   }
+};
+
+const updatePage = pageNo => {
+  state.pagination.page = pageNo;
+};
+
+const setStart = start => {
+  state.pagination.start = start;
+};
+
+const setPage = page => {
+  state.pagination.page = page;
+};
+
+module.exports = {
+  state,
+  updatePage,
+  setStart,
+  setPage
 };

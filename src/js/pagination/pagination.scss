@@ -1,3 +1,17 @@
-#pagination {
-  text-align: center;
+.page {
+  padding: 0 5px;
+  border: 1px solid black;
+  cursor: pointer;
+}
+.highlight {
+  background: red;
+  color: white;
+}
+
+#paginationWrapper {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+  margin: 20px;
 }
