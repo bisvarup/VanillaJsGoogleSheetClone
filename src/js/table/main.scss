@@ -1,0 +1,55 @@
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+#excel {
+  height: 90vh;
+  overflow: scroll;
+  width: 95%;
+  border: 3px solid black;
+  margin: 0px auto;
+
+  table {
+    tr {
+      td {
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    thead {
+      background: #888;
+      color: #fff;
+      tr {
+        td {
+          border: 1px solid white;
+          text-align: left;
+        }
+      }
+    }
+
+    tbody {
+      tr {
+        td {
+          border: 1px solid black;
+          text-align: center;
+        }
+      }
+    }
+  }
+}

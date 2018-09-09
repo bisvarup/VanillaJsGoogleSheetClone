@@ -1,0 +1,26 @@
+{
+  "name": "movie-analysis",
+  "version": "1.0.0",
+  "description": "Movie Analysis",
+  "scripts": {
+    "dev": "webpack-dev-server",
+    "build:dev": "webpack -d",
+    "build:prod": "webpack -p"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "css-loader": "^1.0.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "node-sass": "^4.9.3",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.0",
+    "webpack": "^4.17.2",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {}
+}
