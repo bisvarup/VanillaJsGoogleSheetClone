@@ -31,6 +31,19 @@ header {
         .menu {
           margin-top: 8px;
           font-size: 14px;
+
+          .dropdown {
+            z-index: 20;
+            display: none;
+            position: absolute;
+            background: white;
+            border: 1px solid black;
+            li {
+              display: block;
+              text-align: left;
+            }
+          }
+
           ul {
             margin: 0;
             padding: 0;

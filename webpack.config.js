@@ -29,6 +29,9 @@ module.exports = {
         collapseBooleanAttributes: true
       }
     }),
-    new CopyWebpackPlugin([{ from: "assets", to: "assets" }])
+    new CopyWebpackPlugin([
+      { from: "assets", to: "assets" },
+      { from: "constants", to: "assets/constants" }
+    ])
   ]
 };
