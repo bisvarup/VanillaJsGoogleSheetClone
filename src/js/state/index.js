@@ -8,6 +8,9 @@ state = {
     start: 1,
     total: lib.totalPages(),
     maxSize: 5
+  },
+  application: {
+    fileName: "movies.json"
   }
 };
 

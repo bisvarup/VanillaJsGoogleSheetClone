@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 module.exports = {
   devServer: {
     contentBase: path.join(__dirname, "dist"),
@@ -27,6 +28,7 @@ module.exports = {
         collapseWhitespace: false,
         collapseBooleanAttributes: true
       }
-    })
+    }),
+    new CopyWebpackPlugin([{ from: "assets", to: "assets" }])
   ]
 };

@@ -1,0 +1,65 @@
+header {
+  padding: 8px 16px;
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+
+    div {
+      margin-right: 16px;
+    }
+    #logo {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      img {
+        width: 35px;
+        height: 45px;
+      }
+    }
+    .content {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
+      .leftDiv {
+        #filename {
+          margin: 0;
+          padding: 0;
+          font-size: 20px;
+          font-weight: 400;
+        }
+        .menu {
+          margin-top: 8px;
+          font-size: 14px;
+          ul {
+            margin: 0;
+            padding: 0;
+            li {
+              display: inline-block;
+              text-decoration: none;
+              padding: 8px;
+              text-align: center;
+              cursor: pointer;
+            }
+            li:hover {
+              background: rgb(235, 235, 235);
+              border-radius: 4px;
+            }
+          }
+        }
+      }
+      .rightDiv {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .share {
+          background: #4285f4;
+          color: #fff;
+          padding: 8px 16px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
+}
